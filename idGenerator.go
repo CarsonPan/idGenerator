@@ -28,7 +28,7 @@ func init() {
 	machineId = mac.GetMachineId()
 	processId = mac.GetProcessId()
 	if machineId > machineIdMask {
-		panic("machineId 范围为0-128")
+		panic("machineId 范围为0-127")
 	}
 	if processId > processIdMask {
 		panic("processId 范围为0-7")
