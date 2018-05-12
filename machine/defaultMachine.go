@@ -22,7 +22,7 @@ func (this *DefaultMacthine) GetMachineId() uint64 {
 	if err != nil {
 		return 0
 	}
-	code := uint64(hashCode) & machineIdMask //只保留后7位 且 0-128
+	code := uint64(hashCode) & machineIdMask //只保留后7位 且 0-127
 	return code
 
 }
